@@ -5,18 +5,18 @@ import Home from './pages/home';
 //sttyles//
 import GlobalStyles from './styles/GlobalStyles';
 //contests..//
-import { DarkModeProvider } from './context/DarkModeContext';
+import { AppEffectsProvider } from './context/AppEffectsContext';
 
 function App() {
   return (
-    <DarkModeProvider>
+    <AppEffectsProvider>
       <GlobalStyles />
       <BrowserRouter>
         <Routes>
           <Route index element={<Home />} />
         </Routes>
       </BrowserRouter>
-    </DarkModeProvider>
+    </AppEffectsProvider>
   );
 }
 

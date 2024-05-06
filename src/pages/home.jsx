@@ -14,13 +14,16 @@ const StyledHeroContainer = styled.div`
   align-items: center;
   justify-content: center;
   height: 80dvh;
+  max-width: 130rem;
+  margin: 0 auto;
   flex-direction: column;
   overflow: hidden;
+  border-bottom: 0.1rem solid grey;
 `;
 
 const StyledImg = styled.img`
   height: 16rem;
-  transform: translateY(-10rem);
+  transform: translateY(-0rem);
 `;
 
 const StyledH1 = styled.h1`
@@ -28,15 +31,15 @@ const StyledH1 = styled.h1`
   text-align: center;
   font-family: 'Josefin Sans', 'sans-serif';
   color: grey;
-  transform: translateY(-10rem);
+  transform: translateY(-0rem);
 `;
 
 const StyledGalleryForHero = styled.div`
-  position: absolute;
-  top: 30rem;
+  position: relative;
 
   height: 20rem;
   width: 20rem;
+  transform: translateY(3rem);
 `;
 
 const StyledImages = styled.img`
