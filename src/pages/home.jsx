@@ -1,5 +1,6 @@
 //UI//
 import Nav from '../ui/Nav';
+import Carousel from '../ui/carousel';
 //logo or img//
 import Logo from '../assets/logo+name.jpeg';
 import Img1 from '../assets/gallery/lake1.jpg';
@@ -82,6 +83,7 @@ function Home() {
           <StyledImages src={Img3} className="img3" />
         </StyledGalleryForHero>
       </StyledHeroContainer>
+      <Carousel />
     </div>
   );
 }

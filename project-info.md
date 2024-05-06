@@ -29,5 +29,7 @@
 - fix hero section elements positioning just make it fixed size▶️
 - supabase register ▶️
 - supabase create data base
+- buttons styling for carousel
+- give proper stule for carousel booking button
 - create reducers for app effect context
 - fix nav elements for responsive overlapping

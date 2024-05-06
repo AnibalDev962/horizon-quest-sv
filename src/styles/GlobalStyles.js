@@ -1,5 +1,12 @@
 import { createGlobalStyle } from 'styled-components';
 
+//spacing//
+
+/* 4rem top margin between components
+main color color: #00ffb3;
+main color dark background-color: #14382d;
+ */
+
 const GlobalStyles = createGlobalStyle`
 :root {
   &, &.light-mode {

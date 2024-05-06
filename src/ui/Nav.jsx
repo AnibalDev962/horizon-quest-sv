@@ -39,26 +39,7 @@ const StyledButton = styled.button`
 function Nav() {
   const { windowSize } = useAppEffects();
   console.log(windowSize);
-  /* const [windowSize, setWindowSize] = useState(getWindowSize()); */
 
-  /*   useEffect(() => {
-    function handleWindowResize() {
-      setWindowSize(getWindowSize());
-    }
-
-    window.addEventListener('resize', handleWindowResize);
-    console.log(windowSize);
-
-    return () => {
-      window.removeEventListener('resize', handleWindowResize);
-    };
-  }, [windowSize]);
-
-  function getWindowSize() {
-    const { innerWidth, innerHeight } = window;
-    return { innerWidth, innerHeight };
-  }
- */
   return (
     <StyledNav>
       <img
