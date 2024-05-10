@@ -21,9 +21,14 @@ const StyledNav = styled.div`
 const StyledDesktopNav = styled.ul`
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  gap: 1.2rem;
   color: white;
   margin-right: 1.5rem;
+  transition: all 0.3s;
+
+  @media only screen and (min-width: 1200px) {
+    gap: 2rem;
+  }
 `;
 
 const StyledButton = styled.button`
@@ -33,6 +38,15 @@ const StyledButton = styled.button`
   border: none;
   &:hover {
     color: #00ffb3;
+    transition: all 0.3s;
+  }
+`;
+
+const StyledLogo = styled.img`
+  height: 5rem;
+  margin-left: 1rem;
+  @media only screen and (min-width: 1000px) {
+    height: 6rem;
   }
 `;
 
@@ -42,11 +56,7 @@ function Nav() {
 
   return (
     <StyledNav>
-      <img
-        src={logo}
-        alt="company logo"
-        style={{ height: '5rem', marginLeft: '1rem' }}
-      ></img>
+      <StyledLogo src={logo} alt="company logo"></StyledLogo>
       {windowSize.innerWidth < 600 ? (
         <CiMenuBurger
           style={{ marginRight: '2rem', color: 'white', fontSize: '3rem' }}

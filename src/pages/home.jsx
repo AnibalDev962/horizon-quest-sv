@@ -14,17 +14,22 @@ const StyledHeroContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80dvh;
+  height: 90dvh;
   max-width: 130rem;
   margin: 0 auto;
   flex-direction: column;
   overflow: hidden;
-  border-bottom: 0.1rem solid grey;
+
+  margin-bottom: 6rem;
 `;
 
 const StyledImg = styled.img`
   height: 16rem;
   transform: translateY(-0rem);
+  @media only screen and (min-width: 600px) {
+    height: 18rem;
+    transform: translateY(-2rem);
+  }
 `;
 
 const StyledH1 = styled.h1`
@@ -33,6 +38,10 @@ const StyledH1 = styled.h1`
   font-family: 'Josefin Sans', 'sans-serif';
   color: grey;
   transform: translateY(-0rem);
+  @media only screen and (min-width: 600px) {
+    font-size: 2.5rem;
+    transform: translateY(-2rem);
+  }
 `;
 
 const StyledGalleryForHero = styled.div`
@@ -41,6 +50,11 @@ const StyledGalleryForHero = styled.div`
   height: 20rem;
   width: 20rem;
   transform: translateY(3rem);
+
+  @media only screen and (min-width: 600px) {
+    transform: scale(1.2) translateY(2rem);
+  }
+  margin-bottom: 2rem;
 `;
 
 const StyledImages = styled.img`
